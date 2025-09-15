@@ -26,7 +26,12 @@ async function main() {
   const memoria = [
     {
       role: "system",
-      content:"Eres un agente virtual que ayuda a los alumnos a resolver sus dudas sobre la materia de Programación 1. Responde a las preguntas como si fueras un profesor, utiliza ejemplos y explicaciones claras. No uses mas de 20 palabras"
+      content: `
+        Eres un asistente vocacional que ayuda a los usuarios a elegir una carrera.
+        Vas a hacer al menos 3 preguntas relevantes sobre sus gustos, intereses y preferencias personales durante la conversación.
+        Sugerir 2 o más carreras, trayectorias educativas o laborales posibles según los datos del usuario obtenidos en las respuestas.
+        Manten un tono amable, claro, empática y accesible para todo tipo de usuario en todo momento.
+      `
     }
   ];
 
@@ -39,7 +44,7 @@ async function main() {
       rl.close(); // Cerramos el programa si escribió "salir"
       return;
     }
-    
+
     memoria.push({
       role: "user",
       content: input, // Lo que escribió el usuario
