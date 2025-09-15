@@ -1,4 +1,6 @@
-# ejemplo-llm-1
+# Simulador vocacional IA
+
+Bot inteligente que simula orientación vocacional, interactúa con usuarios, pregunta sobre intereses y sugiere carreras según sus respuestas. Incluye memoria para recordar mensajes previos.
 
 ## Requisitos previos
 
